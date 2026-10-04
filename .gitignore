@@ -1,0 +1,15 @@
+
+.zmk/
+
+# West-fetched dependencies and local build output.
+zmk/
+zephyr/
+modules/
+build/
+
+# Local Python environment.
+.venv/
+.envrc
+
+# macOS metadata.
+.DS_Store
