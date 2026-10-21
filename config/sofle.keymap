@@ -40,7 +40,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "default";
+            display-name = "Base";
 // ------------------------------------------------------------------------------------------------------------
 // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
@@ -61,7 +61,7 @@
         };
 
         lower_layer {
-            display-name = "lower";
+            display-name = "Lower";
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
 // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
@@ -81,7 +81,7 @@
         };
 
         raise_layer {
-            display-name = "raise";
+            display-name = "Raise";
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |       | MIN  | WIN^ | MAX   |       |      |                | PGUP |      |   ^   |      |       |       |
@@ -107,7 +107,7 @@
 // |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
 // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
 //                    |         |         |         |         |         | |      |      |      |       |      |
-            display-name = "adjust";
+            display-name = "Adjust";
             bindings = <
 &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &none &none &none &none &none &none
 &ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &none &none &none &none &none &none

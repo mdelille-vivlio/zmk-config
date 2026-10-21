@@ -25,12 +25,14 @@ sdk:
 left:
 	west build -p always -s zmk/app -d build/sofle_left \
 		-b nice_nano_v2 \
-		-- -DSHIELD=sofle_left -DZMK_CONFIG="$(CURDIR)/config"
+		-- -DSHIELD=sofle_left -DZMK_CONFIG="$(CURDIR)/config" \
+		-DZMK_EXTRA_MODULES="$(CURDIR)/sofle_display"
 
 right:
 	west build -p always -s zmk/app -d build/sofle_right \
 		-b nice_nano_v2 \
-		-- -DSHIELD=sofle_right -DZMK_CONFIG="$(CURDIR)/config"
+		-- -DSHIELD=sofle_right -DZMK_CONFIG="$(CURDIR)/config" \
+		-DZMK_EXTRA_MODULES="$(CURDIR)/sofle_display"
 
 ifeq ($(shell uname),Darwin)
 NICENANO := /Volumes/NICENANO
