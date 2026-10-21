@@ -32,8 +32,16 @@ right:
 		-b nice_nano_v2 \
 		-- -DSHIELD=sofle_right -DZMK_CONFIG="$(CURDIR)/config"
 
+ifeq ($(shell uname),Darwin)
+NICENANO := /Volumes/NICENANO
+CP := cp -X
+else
+NICENANO := /media/$(USER)/NICENANO
+CP := cp
+endif
+
 ileft:
-	cp -X build/sofle_left/zephyr/zmk.uf2 /Volumes/NICENANO
+	$(CP) build/sofle_left/zephyr/zmk.uf2 $(NICENANO)
 
 iright:
-	cp -X build/sofle_right/zephyr/zmk.uf2 /Volumes/NICENANO
+	$(CP) build/sofle_right/zephyr/zmk.uf2 $(NICENANO)
