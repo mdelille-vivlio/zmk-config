@@ -54,8 +54,8 @@
 // | CTRL/ESC | A |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | CTRL| ALT  | CMD  | LOWER|  ENTER |  | SPACE | BSPC  | ALT   | CMD   | RAISE|
-// Position code: L[r,c] and R[r,c], rows top-to-bottom, columns from the split outward.
-// Thumb row is row 4; R[4,0]=SPACE, R[4,1]=BSPC, R[4,2]=RALT, R[4,3]=RGUI, R[4,4]=RAISE.
+// Position code: L[r,c] and R[r,c], rows bottom-to-top (thumb row = 0, number row = 4), columns from the split outward.
+// Thumb row is row 0; R[0,0]=SPACE, R[0,1]=BSPC, R[0,2]=RALT, R[0,3]=RGUI, R[0,4]=RAISE.
             bindings = <
 &kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
 &kp TAB &kp Q  &kp W    &kp E    &kp R     &kp T                       &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
