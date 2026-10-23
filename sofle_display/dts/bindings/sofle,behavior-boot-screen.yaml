@@ -1,0 +1,5 @@
+description: Draws a bootloader screen on the OLED, then reboots into the UF2 bootloader
+
+compatible: "sofle,behavior-boot-screen"
+
+include: zero_param.yaml

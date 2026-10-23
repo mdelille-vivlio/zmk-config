@@ -27,7 +27,8 @@ flash() {
         while [ -d "$NICENANO" ]; do sleep 0.5; done
     fi
 
-    echo "Plug in the $side half and double-tap its reset button."
+    echo "Plug in the $side half, then hold Lower + Raise and press its outer Shift corner"
+    echo "(or double-tap its reset button)."
     printf "Waiting for %s" "$NICENANO"
     until [ -d "$NICENANO" ]; do
         printf .
