@@ -90,7 +90,7 @@
         raise_layer {
             display-name = "Raise";
 // ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
+// |       |      |      |       | ALTF4 |      |                |      |      |       |      |       |       |
 // |       | MIN  | WIN^ | MAX   | PRTSC | SSHOT|                | PGUP |      |   ^   |      |       |       |
 // |       | WIN< | WINv | WIN>  | WSHOT | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
 // MIN/MAX = GUI+Down/Up; WIN<^v> = GUI+Shift+arrow (move window).
@@ -98,7 +98,7 @@
 // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
 //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &trans    &trans    &trans   &trans    &trans  &trans
+&trans     &trans       &trans       &trans       &kp LA(F4)   &trans                        &trans    &trans    &trans   &trans    &trans  &trans
 &trans     &kp LG(DOWN) &kp LG(LS(UP)) &kp LG(UP) &kp PSCRN    &kp LS(PSCRN)                      &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
 &trans     &kp LG(LS(LEFT)) &kp LG(LS(DOWN)) &kp LG(LS(RIGHT)) &kp LA(PSCRN) &kp CLCK                      &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans        &trans  &trans  &trans    &trans    &trans   &trans    &trans  &trans
